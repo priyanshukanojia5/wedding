@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  body {
+    background-color: #2A0810;
+    color: #FFF9EB;
+    font-family: 'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #C5A15B;
+    color: #4A101B;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #2A0810;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A15B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E5CB8C;
+}
+
+/* Gold Foil Text Shimmer */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF0B8 0%, #C5A15B 50%, #E5CB8C 75%, #9E7B35 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-text-subtle {
+  background: linear-gradient(135deg, #F6E7BE 0%, #C5A15B 60%, #A9853F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.maroon-gradient-text {
+  background: linear-gradient(135deg, #741C29 0%, #4A101B 60%, #300810 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Authentic Jaali Pattern */
+.bg-jaali {
+  background-image: radial-gradient(rgba(197, 161, 91, 0.12) 1px, transparent 1px),
+                    radial-gradient(rgba(197, 161, 91, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
+
+.bg-jaali-subtle {
+  background-image: radial-gradient(rgba(197, 161, 91, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Paper Grain Texture */
+.paper-texture {
+  background-color: #FFF9EB;
+  background-image: radial-gradient(#E8DFC8 0.75px, transparent 0.75px), radial-gradient(#FAF2DE 0.75px, #FFF9EB 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+/* Arch Border Mask / Clip */
+.mandap-arch {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+/* Glow effects */
+.box-gold-glow {
+  box-shadow: 0 0 25px rgba(197, 161, 91, 0.25);
+}
+
+.box-diya-glow {
+  box-shadow: 0 0 40px rgba(255, 170, 50, 0.35);
+}
